@@ -1,12 +1,13 @@
 package menjacnica;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
+
 
 public class Valuta {
 
 	String naziv;
 	String skraceniNaziv;
-	LinkedList<ValutaNaDan> valutaNaDan;
+	ArrayList<ValutaNaDan> valutaNaDan;
 
 	public String getNaziv() {
 		return naziv;
@@ -28,11 +29,11 @@ public class Valuta {
 		this.skraceniNaziv = skraceniNaziv;
 	}
 
-	public LinkedList<ValutaNaDan> getValutaNaDan() {
+	public ArrayList<ValutaNaDan> getValutaNaDan() {
 		return valutaNaDan;
 	}
 
-	public void setValutaNaDan(LinkedList<ValutaNaDan> valutaNaDan) {
+	public void setValutaNaDan(ArrayList<ValutaNaDan> valutaNaDan) {
 		this.valutaNaDan = valutaNaDan;
 	}
 
