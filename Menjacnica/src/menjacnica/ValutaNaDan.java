@@ -13,6 +13,8 @@ public class ValutaNaDan {
 	}
 
 	public void setDatum(Date datum) {
+		if (datum == null)
+			throw new RuntimeException();
 		this.datum = datum;
 	}
 
@@ -21,6 +23,8 @@ public class ValutaNaDan {
 	}
 
 	public void setProdajniKurs(int prodajniKurs) {
+		if (prodajniKurs < 0)
+			throw new RuntimeException();
 		this.prodajniKurs = prodajniKurs;
 	}
 
@@ -29,6 +33,8 @@ public class ValutaNaDan {
 	}
 
 	public void setSrednjiKurs(int srednjiKurs) {
+		if (srednjiKurs < 0)
+			throw new RuntimeException();
 		this.srednjiKurs = srednjiKurs;
 	}
 
@@ -37,6 +43,8 @@ public class ValutaNaDan {
 	}
 
 	public void setKupovniKurs(int kupovniKurs) {
+		if (kupovniKurs <0)
+			throw new RuntimeException();
 		this.kupovniKurs = kupovniKurs;
 	}
 
@@ -80,6 +88,4 @@ public class ValutaNaDan {
 				+ ", kupovniKurs=" + kupovniKurs + "]";
 	}
 
-	
-	
 }

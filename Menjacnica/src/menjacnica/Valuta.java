@@ -11,6 +11,8 @@ public class Valuta {
 	}
 
 	public void setNaziv(String naziv) {
+		if (naziv==null)
+			throw new RuntimeException();
 		this.naziv = naziv;
 	}
 
@@ -19,6 +21,8 @@ public class Valuta {
 	}
 
 	public void setSkraceniNaziv(String skraceniNaziv) {
+		if (skraceniNaziv==null)
+			throw new RuntimeException();
 		this.skraceniNaziv = skraceniNaziv;
 	}
 
